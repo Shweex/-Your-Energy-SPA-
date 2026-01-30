@@ -1,0 +1,127 @@
+.favorites {
+  padding: 24px 0 40px;
+}
+.favorites-head {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.favorites-subtitle {
+  color: rgba(36, 36, 36, 0.6);
+}
+.favorites-layout {
+  display: grid;
+  gap: 24px;
+}
+.favorites-side {
+  display: grid;
+  gap: 16px;
+}
+.favorites-side-bottom {
+  display: grid;
+  gap: 16px;
+}
+.favorites-content {
+  display: grid;
+  gap: 20px;
+}
+.favorites-empty {
+  margin: 120px auto 0;
+  color: rgba(36, 36, 36, 0.7);
+  text-align: center;
+  max-width: 420px;
+}
+.favorites-list {
+  list-style: none;
+  display: grid;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+.favorite-card {
+  border: 1px solid rgba(36, 36, 36, 0.12);
+  border-radius: 24px;
+  padding: 20px 24px;
+  display: grid;
+  gap: 14px;
+  background-color: #fff;
+}
+.favorite-card-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+.favorite-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+}
+.favorite-remove-btn {
+  background-color: transparent;
+  border: 1px solid rgba(36, 36, 36, 0.2);
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+.favorite-meta,
+.favorite-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  color: rgba(36, 36, 36, 0.7);
+  font-size: 14px;
+}
+.favorite-start-btn {
+  justify-self: flex-start;
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: none;
+  background-color: #242424;
+  color: #fff;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .favorites-layout {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+  .favorites-side-bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .favorites-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .favorites-layout {
+    grid-template-columns: 420px 1fr;
+    align-items: start;
+  }
+  .favorites-side-bottom {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .favorites-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .favorites-head {
+    margin-bottom: 16px;
+  }
+  .favorites-empty {
+    margin-top: 24px;
+  }
+  .favorites-side-bottom {
+    grid-template-columns: 1fr;
+  }
+  .favorite-card {
+    padding: 16px;
+    border-radius: 20px;
+  }
+  .favorite-name {
+    font-size: 18px;
+  }
+}

@@ -4,16 +4,310 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Your Energy</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+    <main class="page-home">
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-main">
+            <div class="hero-title-wrap">
+              <h1 class="hero-title">
+                <span class="hero-title-line">
+                  <img class="hero-icon" src="./img/sun.png" alt="" />
+                  Get <span class="hero-title-em">Body</span> in shape,
+                </span>
+                <br />
+                Stay healthy
+              </h1>
+            </div>
+            <p class="hero-text">
+              Transform your physique and embrace a healthier lifestyle with our
+              comprehensive fitness and nutrition support.
+            </p>
+          </div>
+          <div class="hero-aside">
+            <img
+              class="hero-aside-image"
+              src="./img/young-women-doing-fitness-outdoors-together.jpg"
+              alt="Women exercising outdoors"
+              width="250"
+              height="168"
+            />
+            <ul class="hero-tags" aria-label="Popular tags">
+              <li class="hero-tag">#Sport</li>
+              <li class="hero-tag">#Healthy</li>
+              <li class="hero-tag">#Workout</li>
+              <li class="hero-tag">#Diet</li>
+            </ul>
+          </div>
+          <img
+            class="hero-image"
+            src="./img/women-sportswear-working-out-outdoors.jpg"
+            alt="Women exercising outdoors"
+            width="904"
+            height="376"
+          />
+        </div>
+      </section>
+
+      <section class="exercises">
+        <div class="container exercises-container">
+          <div class="exercises-head">
+            <h2 class="section-title">Exercises</h2>
+            <ul class="filter-tabs" role="tablist">
+              <li class="filter-tab">
+                <button class="filter-btn is-active" type="button">
+                  Muscles
+                </button>
+              </li>
+              <li class="filter-tab">
+                <button class="filter-btn" type="button">Body parts</button>
+              </li>
+              <li class="filter-tab">
+                <button class="filter-btn" type="button">Equipment</button>
+              </li>
+            </ul>
+          </div>
+
+          <div class="exercises-layout">
+            <aside class="exercises-side">
+              <article class="side-card side-quote">
+                <div class="side-card-head">
+                  <div class="side-card-label">
+                    <img class="side-card-icon" src="./img/icon.png" alt="" />
+                    <span>Quote of the day</span>
+                  </div>
+                  <img class="side-card-quote" src="./img/icon-1.png" alt="" />
+                </div>
+                <p class="side-card-text">
+                  A lot of times I find that people who are blessed with the most
+                  talent don't always develop that attitude, and the ones who
+                  aren't blessed in that way are the most competitive and have the
+                  biggest heart.
+                </p>
+                <p class="side-card-author">Tom Brady</p>
+              </article>
+
+              <div class="side-image-card">
+                <img
+                  class="side-image"
+                  src="./img/women-sportswear-taking-break-from-workout.jpg"
+                  alt="Women taking a break from workout"
+                  width="264"
+                  height="176"
+                />
+              </div>
+
+              <article class="side-card side-time">
+                <div class="side-card-head">
+                  <div class="side-card-label">
+                    <img class="side-card-icon" src="./img/icon-2.png" alt="" />
+                    <span>110 min</span>
+                  </div>
+                </div>
+                <p class="side-card-subtitle">Daily norm of physical activity</p>
+                <p class="side-card-text">
+                  The World Health Organization recommends at least 150 minutes
+                  of moderate-intensity aerobic physical activity throughout the
+                  week for adults aged 18-64 years, equivalent to 110 minutes per
+                  week of running. However, what happens if we reduce that to 110
+                  minutes every day? It would help us meet the daily need for
+                  physical activity and provide extra benefits.
+                </p>
+              </article>
+            </aside>
+
+            <div class="exercises-content">
+              <ul class="category-grid" data-category-grid>
+              <li class="category-tile">
+                <img
+                  class="category-tile-image"
+                  src="./img/abductors.jpg"
+                  alt="Abductors"
+                />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Abductors</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img class="category-tile-image" src="./img/Abs.jpg" alt="Abs" />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Abs</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img
+                  class="category-tile-image"
+                  src="./img/Adductors.jpg"
+                  alt="Adductors"
+                />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Adductors</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img
+                  class="category-tile-image"
+                  src="./img/Biceps.jpg"
+                  alt="Biceps"
+                />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Biceps</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img
+                  class="category-tile-image"
+                  src="./img/Calves.jpg"
+                  alt="Calves"
+                />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Calves</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img
+                  class="category-tile-image"
+                  src="./img/Cardiovascular-System.jpg"
+                  alt="Cardiovascular system"
+                />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Cardiovascular System</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img
+                  class="category-tile-image"
+                  src="./img/Delts.jpg"
+                  alt="Delts"
+                />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Delts</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img
+                  class="category-tile-image"
+                  src="./img/Forearms.jpg"
+                  alt="Forearms"
+                />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Forearms</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img
+                  class="category-tile-image"
+                  src="./img/Glutes.jpg"
+                  alt="Glutes"
+                />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Glutes</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img
+                  class="category-tile-image"
+                  src="./img/Hamstrings.jpg"
+                  alt="Hamstrings"
+                />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Hamstrings</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img class="category-tile-image" src="./img/Lats.jpg" alt="Lats" />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Lats</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              <li class="category-tile">
+                <img
+                  class="category-tile-image"
+                  src="./img/Levator-Scapulae.jpg"
+                  alt="Levator scapulae"
+                />
+                <span class="category-tile-label">
+                  <span class="category-tile-title">Levator Scapulae</span>
+                  <span class="category-tile-subtitle">Muscles</span>
+                </span>
+              </li>
+              </ul>
+
+              <div class="exercises-results is-hidden" data-exercises-results>
+                <div class="exercises-results-head">
+                  <button class="exercises-back-btn" type="button">
+                    Back
+                  </button>
+                  <h3 class="exercises-results-title">Exercises</h3>
+                  <form class="exercises-search" autocomplete="off">
+                    <input
+                      class="exercises-search-input"
+                      type="text"
+                      name="keyword"
+                      placeholder="Search"
+                      aria-label="Search exercises"
+                    />
+                    <button class="exercises-search-btn" type="submit">
+                      Search
+                    </button>
+                  </form>
+                </div>
+                <p class="exercises-empty is-hidden">
+                  No exercises found for this request.
+                </p>
+                <ul class="exercise-list"></ul>
+              </div>
+            </div>
+          </div>
+
+          <ul class="pagination" aria-label="Pagination">
+            <li class="pagination-item">
+              <button
+                class="pagination-btn pagination-btn--icon"
+                type="button"
+                aria-label="Previous page"
+              >
+                ‹
+              </button>
+            </li>
+            <li class="pagination-item">
+              <button class="pagination-btn is-active" type="button">1</button>
+            </li>
+            <li class="pagination-item">
+              <button class="pagination-btn" type="button">2</button>
+            </li>
+            <li class="pagination-item">
+              <button class="pagination-btn" type="button">3</button>
+            </li>
+            <li class="pagination-item pagination-item--dots">...</li>
+            <li class="pagination-item">
+              <button
+                class="pagination-btn pagination-btn--icon"
+                type="button"
+                aria-label="Next page"
+              >
+                ›
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <load src="./partials/footer.html" />

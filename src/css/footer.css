@@ -1,21 +1,106 @@
-.footer {
-  padding: 20px 0;
+.footer .logo-icon {
+  display: none;
 }
-.footer-desc {
-  text-align: center;
+.footer {
+  padding: 40px 0 24px;
+  background-color: #1f1f1f;
+  color: #f6f6f6;
+}
+.footer-container {
+  display: grid;
+  gap: 24px;
+}
+.footer-top {
+  display: grid;
+  gap: 24px;
+}
+.footer-brand {
+  display: grid;
+  gap: 12px;
+}
+.footer .logo-text {
+  color: #f6f6f6;
+}
+.footer-title {
+  font-size: 24px;
+  font-weight: 500;
+  max-width: 320px;
+}
+.footer-copy {
+  font-size: 12px;
+  color: rgba(246, 246, 246, 0.6);
+}
+.footer-socials {
+  justify-content: flex-start;
+}
+.footer-socials .social-link {
+  background-color: #2d2d2d;
+  border-color: rgba(246, 246, 246, 0.2);
+  color: #fff;
+}
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-top: 1px solid rgba(246, 246, 246, 0.1);
+  padding-top: 16px;
+}
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
 }
 .footer-link {
-  position: relative;
+  font-size: 12px;
+  color: rgba(246, 246, 246, 0.6);
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+.subscribe-form {
+  display: grid;
+  gap: 12px;
+}
+.subscribe-label {
+  font-size: 12px;
+  color: rgba(246, 246, 246, 0.8);
+}
+.subscribe-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.subscribe-input {
+  border: 1px solid rgba(246, 246, 246, 0.3);
+  border-radius: 999px;
+  padding: 10px 16px;
+  background-color: transparent;
+  color: #f6f6f6;
+}
+.subscribe-input::placeholder {
+  color: rgba(246, 246, 246, 0.6);
+}
+.subscribe-btn {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: none;
+  background-color: #f6f6f6;
+  color: #242424;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-field {
+    flex-direction: row;
+  }
+  .subscribe-input {
+    flex: 1;
+  }
+  .footer-top {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: start;
+  }
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

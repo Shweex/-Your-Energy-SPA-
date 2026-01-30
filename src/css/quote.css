@@ -1,0 +1,23 @@
+.quote {
+  padding: 24px 0 32px;
+}
+.quote-container {
+  display: grid;
+  gap: 18px;
+}
+.quote-card {
+  border-radius: 18px;
+  padding: 18px;
+  background-color: #f6f6f6;
+}
+.quote-text {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.quote-author {
+  margin-top: 12px;
+  color: rgba(36, 36, 36, 0.6);
+}
+.quote-note {
+  max-width: 420px;
+}

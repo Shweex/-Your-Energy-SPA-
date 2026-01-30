@@ -4,25 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
+    <title>Your Energy | Favorites</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load
-      src="./partials/header.html"
-      icon-path="./img/sprite.svg#logo"
-      highlight-act="active"
-    />
+    <load src="./partials/header.html" icon-path="./img/sprite.svg#logo" />
 
     <main>
-      <div class="container">
-        <h1 class="main-title">
-          <span class="main-title-gradient">Welcome</span> to page 2
-        </h1>
-        <load src="./partials/back-link.html" />
-      </div>
+      <section class="favorites">
+        <div class="container">
+          <div class="favorites-head">
+            <h1 class="section-title">Favorites</h1>
+          </div>
+
+          <div class="favorites-layout">
+            <aside class="favorites-side">
+              <article class="side-card side-quote">
+                <div class="side-card-head">
+                  <div class="side-card-label">
+                    <img class="side-card-icon" src="./img/icon.png" alt="" />
+                    <span>Quote of the day</span>
+                  </div>
+                  <img class="side-card-quote" src="./img/icon-1.png" alt="" />
+                </div>
+                <p class="side-card-text quote-text">
+                  A lot of times I find that people who are blessed with the most
+                  talent don't always develop that attitude, and the ones who
+                  aren't blessed in that way are the most competitive and have the
+                  biggest heart.
+                </p>
+                <p class="side-card-author quote-author">Tom Brady</p>
+              </article>
+
+              <div class="favorites-side-bottom">
+                <article class="side-card side-time">
+                  <div class="side-card-head">
+                    <div class="side-card-label">
+                      <img class="side-card-icon" src="./img/icon-2.png" alt="" />
+                      <span>110 min</span>
+                    </div>
+                  </div>
+                  <p class="side-card-subtitle">Daily norm of sports</p>
+                </article>
+
+                <div class="side-image-card">
+                  <img
+                    class="side-image"
+                    src="./img/women-sportswear-working-out-outdoors_2.jpg"
+                    alt="Women training outdoors"
+                    width="264"
+                    height="176"
+                  />
+                </div>
+              </div>
+            </aside>
+
+            <div class="favorites-content">
+              <p class="favorites-empty">
+                It appears that you haven't added any exercises to your favorites
+                yet. To get started, you can add exercises that you like to your
+                favorites for easier access in the future.
+              </p>
+              <ul class="favorites-list"></ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <load src="./partials/footer.html" />
+
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
